@@ -30,3 +30,13 @@ var LazySingleton=function(){
 		getInstance:init
 	};
 }
+
+var singletonFactory=function(){
+	function A(){
+		this.good='a';
+	}
+	var a=A;
+	return{b:a};
+}();
+var t=new singletonFactory.b();
+console.log(t.good);
