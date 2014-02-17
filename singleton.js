@@ -29,7 +29,7 @@ var LazySingleton=function(){
 	return {
 		getInstance:init
 	};
-}
+}();
 
 var singletonFactory=function(){
 	function A(){
